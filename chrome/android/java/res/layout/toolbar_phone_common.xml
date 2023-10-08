@@ -15,7 +15,7 @@
         android:layout_gravity="start|top"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:visibility="gone"
+        android:visibility="invisible"
         android:background="?attr/selectableItemBackground"
         android:contentDescription="@string/accessibility_toolbar_btn_new_tab" />
 
@@ -24,22 +24,26 @@
         style="@style/ToolbarButton"
         android:src="@drawable/btn_toolbar_home"
         android:contentDescription="@string/accessibility_toolbar_btn_home"
-        android:visibility="gone" />
+        android:visibility="invisible"
 
     <org.chromium.chrome.browser.omnibox.LocationBarPhone
         android:id="@+id/location_bar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:visibility="invisible"
         android:layout_gravity="top" />
+         
 
     <LinearLayout android:id="@+id/toolbar_buttons"
         android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="invisible"
         android:layout_gravity="top|end" >
 
         <Space
             android:layout_width="4dp"
+             android:visibility="invisible"
             android:layout_height="match_parent" />
 
         <ViewStub
@@ -48,29 +52,33 @@
             android:layout="@layout/toolbar_phone_incognito_button"
             style="@style/ToolbarButton"
             android:layout_gravity="top"
+             android:visibility="invisible"
             android:contentDescription="@string/accessibility_tabstrip_btn_incognito_toggle_standard"
-            android:visibility="gone" />
 
         <org.chromium.chrome.browser.toolbar.OverscrollButton
             android:id="@+id/overscroll_button"
             style="@style/ToolbarButton"
             android:src="@drawable/btn_toolbar_hand"
-            android:visibility="gone" />
+            android:visibility="invisible" />
 
         <ImageButton android:id="@+id/tab_switcher_button"
             style="@style/ToolbarButton"
             android:layout_gravity="top"
+            android:visibility="invisible"
             android:contentDescription="@string/accessibility_toolbar_btn_tabswitcher_toggle_default" />
 
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:visibility="invisible"
             android:id="@+id/menu_button_wrapper">
+             
 
             <org.chromium.chrome.browser.widget.TintedImageButton
                 android:id="@+id/menu_button"
                 style="@style/ToolbarMenuButtonPhone"
                 android:src="@drawable/ic_more_vert_black_24dp"
+                android:visibility="invisible"
                 android:contentDescription="@string/accessibility_toolbar_btn_menu" />
 
             <ImageView
