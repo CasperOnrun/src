@@ -15,7 +15,7 @@
         android:layout_gravity="start|top"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:visibility="invisible"
+        android:visibility="gone"
         android:background="?attr/selectableItemBackground"
         android:contentDescription="@string/accessibility_toolbar_btn_new_tab" />
 
